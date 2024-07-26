@@ -1,0 +1,17 @@
+transaction_id,store_name,location,product_id,quantity,price,date
+1001,Tech Haven,New York,101,15,199.99,2023-01-15
+1002,Tech Haven,New York,102,7,299.99,2023-01-16
+1003,Electro Central,Los Angeles,101,10,199.99,2023-01-17
+1004,Electro Central,Los Angeles,103,5,499.99,2023-01-18
+1005,Digital World,Chicago,104,12,129.99,2023-01-19
+1006,Digital World,Chicago,102,4,299.99,2023-01-20
+1007,Tech Haven,New York,104,6,129.99,2023-01-21
+1008,Electro Central,Los Angeles,105,8,349.99,2023-01-22
+1009,Digital World,Chicago,106,9,89.99,2023-01-23
+1010,Tech Haven,New York,107,3,249.99,2023-01-24
+1011,Electro Central,Los Angeles,108,11,99.99,2023-01-25
+1012,Digital World,Chicago,109,4,39.99,2023-01-26
+1013,Tech Haven,New York,110,5,59.99,2023-01-27
+1014,Electro Central,Los Angeles,111,7,299.99,2023-01-28
+1015,Digital World,Chicago,112,6,199.99,2023-01-29
+1016,Tech Haven,New York,113,10,499.99,2023-01-30
