@@ -7,7 +7,12 @@ from awsglue.job import Job
 from pyspark.sql.functions import col
 from awsglue.dynamicframe import DynamicFrame
 
-## @params: [JOB_NAME]
+
+"""
+    Este código lee desde el AWS Glue Datacatalog dos tablas en una base de datos, después realiza un join entre ambas tablas y calcula el total de la venta. 
+    Finalmente, escribe el resultado en un archivo Parquet en S3. 
+"""
+
 args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 
 sc = SparkContext()
@@ -17,7 +22,7 @@ job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
 dyf_sales = glueContext.create_dynamic_frame.from_catalog(
-    database="abd_dev", 
+    database="bddatalab", 
     table_name="sales_csv",
     transformation_ctx="dyf_sales"
 )
@@ -30,7 +35,6 @@ dyf_products = glueContext.create_dynamic_frame.from_catalog(
 
 df_sales = dyf_sales.toDF()
 df_products = dyf_products.toDF()
-
 df_sales = df_sales.withColumn("quantity", col("quantity").cast("int"))
 df_sales = df_sales.withColumn("price", col("price").cast("float"))
    
