@@ -1,8 +1,6 @@
 # Laboratorio AWS Glue
 ## Arquitectura
-![Arquitectura del Laboratorio.](https://myoctocat.com/assets/images/base-octocat.svg)
-
-
+![Arquitectura del Laboratorio.](https://github.com/cloudcampla/aws-glue-101/blob/main/architecture.png?raw=true)
 
 ## **Objetivo**
 * Construir un ETL (Extract, Transform, Load) que utilice DynamicFrames en AWS Glue.
