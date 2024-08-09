@@ -47,7 +47,7 @@ dyf_transformed = DynamicFrame.fromDF(df_transformed, glueContext, "dyf_transfor
 glueContext.write_dynamic_frame.from_options(
     frame = dyf_transformed,
     connection_type = "s3",
-    connection_options = {"path": "s3://path-to-target"},
+    connection_options = {"path": "s3://cloudcamp-target"},
     format = "parquet",
     transformation_ctx = "write_parquet"
 )
