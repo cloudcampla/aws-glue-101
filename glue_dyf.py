@@ -28,7 +28,7 @@ dyf_sales = glueContext.create_dynamic_frame.from_catalog(
 )
 
 dyf_products = glueContext.create_dynamic_frame.from_catalog(
-    database="abd_dev",
+    database="bddatalab",
     table_name="products_csv",
     transformation_ctx="dyf_products"
 )
